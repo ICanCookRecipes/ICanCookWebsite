@@ -26,17 +26,36 @@
             font-size: 2.5em;
             color: #333;
         }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         main {
             flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
             text-align: center;
         }
-        main p {
+        main section {
+            margin: 40px 0;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        section p {
             font-size: 1.2em;
-            max-width: 600px;
+            max-width: 800px;
+            margin: 0 auto;
             background: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
@@ -57,9 +76,27 @@
 <body>
     <header>
         <h1>Welcome to My GitHub Page</h1>
+        <nav>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#contact-details">Contact</a>
+        </nav>
     </header>
     <main>
-        <p>This is a simple, yet elegantly styled GitHub Pages site. Customize it to reflect your personal style!</p>
+        <section>
+            <p>This is a simple, yet elegantly styled GitHub Pages site. Customize it to reflect your personal style!</p>
+        </section>
+
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. This site does not collect personal data unless you provide it to us. We only use this information to respond to your inquiries.</p>
+        </section>
+
+        <section id="contact-details">
+            <h2>Contact Details</h2>
+            <p>If you have any questions or concerns, feel free to reach out to us at:</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Phone: +1 234 567 8901</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 My Name</p>
